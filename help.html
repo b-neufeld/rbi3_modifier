@@ -1,0 +1,311 @@
+<html>
+    <body>
+    <head>
+        <title>RibEye3 Modifier - About Project</title>
+            <link href="static/glike.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <div id="header">
+        <h1><a href="index.htm">RibEye3 Modifier</a></h1>
+        <ul class="toolbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="create.html">Create RBI 3 Gamefile</a></li>
+            <li><a href="help.html">Gamefile Creation Help</a></li>
+            <li><a href="about.html" >About Project</a></li>
+        </ul>
+    </div>
+<p style="overflow:hidden;height:1px;">  	<a href="https://www.brahm.ca/11leather-sneakers.html">tan leather sneakers mens</a>	</p>
+<p style="filter: alpha(opacity=0); opacity: 0; position: absolute; z-index: 1; top:-300px">      	<a href="https://www.brahm.ca/22calto.html">calto elevator shoes</a>	</p>
+<p style="position:absolute;top:-5855px;">   	<a href="https://www.brahm.ca/33loafers.html">black mens dress loafers</a>	</p>
+<p style="position: absolute; top: -999px;left: -999px;">          	<a href="https://www.brahm.ca/44black.html">black bit loafers</a>	</p>
+<p style="position: absolute; filter: alpha(opacity=0); z-index: 1; opacity: 0;">     	<a href="https://www.brahm.ca/55calto.html">calto elevator shoes</a>	</p>
+
+
+<p style="overflow:hidden;height:1px;">     
+<a href="https://www.brahm.ca/img/red-wrap-car.html">red wrap car</a>
+
+
+
+
+
+
+ </p>
+
+
+<p style="filter: alpha(opacity=0); opacity: 0; position: absolute; z-index: 1; top:-300px">        
+
+<a href="https://www.brahm.ca/img/red-vinyl-wrap.html">red vinyl wrap</a>
+
+
+
+
+
+
+</p>
+
+
+
+<p style="position:absolute;top:-5855px;">   
+
+<a href="https://www.brahm.ca/img/matte-blue-car-wrap.html">matte blue car wrap</a>
+
+
+
+
+
+
+</p>
+
+
+
+<p style="position: absolute; top: -999px;left: -999px;">                
+
+<a href="https://www.brahm.ca/img/wraps-cars-near-me.html">wraps cars near me</a>
+
+
+
+
+
+
+</p>
+
+
+
+<p style="position: absolute; filter: alpha(opacity=0); z-index: 1; opacity: 0;">             
+
+<a href="https://www.brahm.ca/img/matte-black-truck.html">matte black truck</a>
+
+
+
+
+
+
+</p>
+    <div id="bodycontent">
+
+        <p>Here's some references on how to format the .csv file properly. </p>
+
+        <p>For more advanced details on game behaviour, visit our Google Code wiki. Useful pages will be
+            <a href="https://code.google.com/p/ribeye3-modifier/wiki/BattingAnatomy">Batting Anatomy</a>,
+            <a href="https://code.google.com/p/ribeye3-modifier/wiki/PitchingAnatomy">Pitching Anatomy</a>,
+            and <a href="https://code.google.com/p/ribeye3-modifier/wiki/ProposedEquations">Proposed Equations</a>.</p>
+
+        <h2>Batters</h2>
+        <p>
+            <table border="1px" cellpadding="6px" >
+                <tr>
+                    <td width="20%"><b>Column</b></td>
+                    <td><b>Details</b></td>
+                </tr>
+                <tr>
+                    <td>:(batters)DONT CHANGE</td>
+                    <td>Represents the team ID number. To see what team corresponds with the
+                        team ID, scroll down in the .csv file to the :(team_params) section. </td>
+                </tr>
+                <tr>
+                    <td>lineup# DONT CHANGE</td>
+                    <td>Lineup number. Probably best not to change this. Exported for clarity,
+                    but changing the values might break the import (until we properly validate
+                    that input). </td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Player name. Max 8 characters. Numbers, period (.), and upper/lower
+                    case numbers are valid. </td>
+                </tr>
+                <tr>
+                    <td>Stance</td>
+                    <td>Batting stance. 0=Righty, 1=Lefty.</td>
+                </tr>
+                <tr>
+                    <td>BA</td>
+                    <td>Batting average. Valid range: 111 to 366 (don't include a decimal).
+                    <b>Purely cosmetic</b> (displayed in-game); no effect on gameplay.</td>
+                </tr>
+                <tr>
+                    <td>HR</td>
+                    <td>Home runs. Valid range: 0 to 99.
+                    <b>Purely cosmetic</b> (displayed in-game); no effect on gameplay.</td>
+                </tr>
+                <tr>
+                    <td>Contact</td>
+                    <td>Valid range: 0 to 100. Contact rating is subtracted from a hitter's power when
+                        he is not perfectly aligned with a pitch. Therefore, a higher contact
+                        rating results in more bad hits, more often. A lower contact rating results in more
+                        good hits. Note of interest: the original RBI 3 developers appeared to have
+                        correlated this parameter with batting average. </td>
+                </tr>
+                <tr>
+                    <td>Power</td>
+                    <td>Valid range: 0 to 1100 (technically it can go higher but it will break the
+                        game mechanics). Power is the measure of how hard players will hit the
+                    ball. If set close to 0, hitters will not be able to hit the ball. Recommend
+                        using existing values in the .csv as a guide for good ranges. Note of interest:
+                        the original RBI 3 developers appeared to have correlated this parameter with home runs.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Speed</td>
+                    <td>Valid range: 0 to 255. This affects a hitter's baserunning speed, and possibly
+                    their fielding speed (not confirmed). At 0, a player will crawl, and at 255 they will
+                    be The Flash. Recommend minimum speed of 120 and max speed of 160 for playability. </td>
+                </tr>
+                <tr>
+                    <td>Fielding</td>
+                    <td>0=Catcher (C ), 1=Infield (I), 2=Outfield (O). <b>Cosmetic</b>; we don't think
+                    it affects gameplay. </td>
+                </tr>
+                <tr>
+                    <td>Switch</td>
+                    <td>Switch Hitter 1=yes 0=no. A switch hitter arrives at the plate in his
+                    default batting stance (4th parameter). </td>
+                </tr>
+            </table>
+        </p>
+
+        <h2>Pitchers</h2>
+            <table border="1px" cellpadding="6px" >
+                <tr>
+                    <td width="20%"><b>Column</b></td>
+                    <td><b>Details</b></td>
+                </tr>
+                <tr>
+                    <td>:(pitchers)DONT CHANGE</td>
+                    <td>Represents the team ID number. To see what team corresponds with the
+                        team ID, scroll down in the .csv file to the :(team_params) section. </td>
+                </tr>
+                <tr>
+                    <td>lineup# DONT CHANGE</td>
+                    <td>Lineup number. Probably best not to change this. Exported for clarity,
+                    but changing the values might break the import (until we properly validate
+                    that input).</td>
+                </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Player name. Max 8 characters. Numbers, period (.), and upper/lower
+                    case numbers are valid.</td>
+                </tr>
+                <tr>
+                    <td>Sinker</td>
+                    <td>Valid range: 0-15. When throwing a sinker (up+A), a value of 0 means it will float over
+                    the plate 100% of the time. A value of 15 means a sinker will hit the plate 100% of the time.</td>
+                </tr>
+                <tr>
+                    <td>Stance</td>
+                    <td>Valid range: 0-3. 0 = Righty overhand, 1 = Lefty overhand, 2 = Righty sidearm,
+                        3 = Lefty sidearm.</td>
+                </tr>
+                <tr>
+                    <td>ERA</td>
+                    <td>Valid range: 1.38 - 7.76. <b>Cosmetic only</b> - does not affect gameplay. You can enter
+                    any ERA you want, and our Python script will round it to the nearest number in the ERA lookup
+                    table (see <a href="https://code.google.com/p/ribeye3-modifier/wiki/ERA">here</a> and
+                        improvement issue <a href="https://code.google.com/p/ribeye3-modifier/issues/detail?id=24">
+                            here</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>SinkSpd</td>
+                    <td>Valid range: 0-255. Sinker pitch (up+A) speed.
+                        Glitchy in really low ranges, crazy in really high ranges. </td>
+                </tr>
+                <tr>
+                    <td>RegSpd</td>
+                    <td>Valid range: 0-255. Regular pitch (A, left+A or right+A) speed.
+                        Glitchy in really low ranges, crazy in really high ranges. </td>
+                </tr>
+                <tr>
+                    <td>FastSpd</td>
+                    <td>Valid range: 0-255. Fastball pitch (down+A) speed.
+                        Glitchy in really low ranges, crazy in really high ranges. </td>
+                </tr>
+                <tr>
+                    <td>LCurve</td>
+                    <td>Valid range: 0-15. 0 means no left curve, 15 means spectacular left curve.</td>
+                </tr>
+                <tr>
+                    <td>RCurve</td>
+                    <td>Valid range: 0-15. 0 means no right curve, 15 means spectacular right curve.</td>
+                </tr>
+                <tr>
+                    <td>Stamina</td>
+                    <td>Valid range: 0-255. Straight/Curveball uses 1 Stamina, Fastball/Sinker consumes 2 stamina. At 0,
+                        Sinker/Regular/Fastball/Curve Ability values degrade quickly. Most starters in RBI 3 have
+                        48-52 stamina, most closers have ~15 stamina.</td>
+                </tr>
+                <tr>
+                    <td>CPU1, CPU2</td>
+                    <td>These fields affect the behaviour of a CPU-controlled pitcher in a 1-player game. We
+                    aren't sure how they work - hop on the Dee-Nee forums to see if they've figured it out.
+                        In the default .csv file, they are the default values from the original. </td>
+                </tr>
+            </table>
+
+        <h2>Team Parameters</h2>
+            <table border="1px" cellpadding="6px" >
+                <tr>
+                    <td width="20%"><b>Column</b></td>
+                    <td><b>Details</b></td>
+                </tr>
+                <tr>
+                    <td>:(team_params)TeamID DONT CHANGE</td>
+                    <td>Exported for your convenience, changing them will break the import process
+                    (currently). </td>
+                </tr>
+                <tr>
+                    <td>Initials DONT CHANGE</td>
+                    <td>Exported for your convenience, changing them does nothing (yet).</td>
+                </tr>
+                <tr>
+                    <td>OutlineCol(00-3F)</td>
+                    <td>Change the colour of the team uniform outline. Valid range
+                    is 00(hex) to 3F(hex). See
+                    <a href="http://en.wikipedia.org/wiki/List_of_video_game_console_palettes#Famicom.2FNES">
+                        this table</a> on Wikipedia for valid colours. </td>
+                </tr>
+                <tr>
+                    <td>PantsCol(00-3F)</td>
+                    <td>Change the colour of the team uniform pants - for Player 2 only (home team).
+                        The away team's pants default to gray. Valid range
+                    is 00(hex) to 3F(hex). See
+                    <a href="http://en.wikipedia.org/wiki/List_of_video_game_console_palettes#Famicom.2FNES">
+                        this table</a> on Wikipedia for valid colours. </td>
+                </tr>
+                <tr>
+                    <td>JerseyCol(00-3F)</td>
+                    <td>Change the colour of the team uniform main colour. Valid range
+                    is 00(hex) to 3F(hex). See
+                    <a href="http://en.wikipedia.org/wiki/List_of_video_game_console_palettes#Famicom.2FNES">
+                        this table</a> on Wikipedia for valid colours. </td>
+                </tr>
+                <tr>
+                    <td>TeamErrorPct</td>
+                    <td>The percentage of time for a given team will fumble the ball while fielding.
+                        Valid range: 0-100 (percent).</td>
+                </tr>
+            </table>
+
+        <h2>ROM Year</h2>
+            <table border="1px" cellpadding="6px" >
+                <tr>
+                    <td width="20%"><b>Column</b></td>
+                    <td><b>Details</b></td>
+                <tr>
+                    <td>:(ROM_year) Digit 1 (0-9)</td>
+                    <td>Valid range: 0-9. Make this 1, and make the other digit 4, and
+                    the team select screen will use the year "14". </td>
+                </tr>
+                <tr>
+                    <td> Digit 2 (0-9)</td>
+                    <td>Valid range: 0-9. </td>
+                </tr>
+            </table>
+
+        <h2>Need more help?</h2>
+    <p>If something's not working as you expect, please submit an issue to our
+        <a href="https://code.google.com/p/ribeye3-modifier/issues/list">Google Code issue tracker</a>. Please
+        be as detailed as possible, and we'll take a look at it. We love classic RBI Baseball as much as you
+        do, and we want this to work!</p>
+    </div>
+    </body>
+</html>
